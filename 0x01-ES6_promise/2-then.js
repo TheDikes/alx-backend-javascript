@@ -7,8 +7,8 @@ function handleResponseFromAPI(promise) {
         body: 'success',
       };
     })
-    .catch((error) => {
-      console.error('Error from the API:', error.message);
+    .catch(() => {
+      console.error('');
       return new Error(); // Return an empty Error object
     });
 }
