@@ -6,7 +6,7 @@ function getFullResponseFromAPI(success) {
     });
   }
   console.error('The fake API is not working currently');
-  return Promise.reject(new Error('Fake API Error'));
+  return Promise.reject(new Error('The fake API is not working currently'));
 }
 
 export default getFullResponseFromAPI;
