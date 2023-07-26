@@ -8,7 +8,7 @@ function handleResponseFromAPI(promise) {
       });
     })
     .catch((error) => {
-      console.error(error.message);
+      console.error('', error.message);
       return Promise.reject(new Error(''));
     });
 }
