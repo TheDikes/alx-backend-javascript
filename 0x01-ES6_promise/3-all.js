@@ -5,8 +5,10 @@ function handleProfileSignup() {
   const utilsUser = createUser();
 
   return Promise.all([utilsPhoto, utilsUser])
-    .then(([photoResponse, userResponse]) => {
-      console.log(`${photoResponse.body} ${userResponse.firstName} ${userResponse.lastName}`);
+    .then(([photo, user]) => {
+      console.log(`${photo.body}`);
+      console.log(`${user.firstName}`);
+      console.log(`${user.lastName}`);
     })
     .catch((error) => {
       console.error('Signup system offline', error);
