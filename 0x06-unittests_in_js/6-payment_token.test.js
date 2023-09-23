@@ -7,7 +7,7 @@ describe('getPaymentTokenFromAPI', () => {
       .then((res) => {
         expect(res).to.include({ data: 'Successful response from the API' });
         done()
-      })
+      });
      .catch((error) => done(error));
   });
 });
